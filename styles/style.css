@@ -1,0 +1,222 @@
+/**
+ * importer.less
+ *
+ * By default, new Sails projects are configured to compile this file
+ * from LESS to CSS.  Unlike CSS files, LESS files are not compiled and
+ * included automatically unless they are imported below.
+ *
+ * The LESS files imported below are compiled and included in the order
+ * they are listed.  Mixins, variables, etc. should be imported first
+ * so that they can be accessed by subsequent LESS stylesheets.
+ *
+ * (Just like the rest of the asset pipeline bundled in Sails, you can
+ * always omit, customize, or replace this behavior with SASS, SCSS,
+ * or any other Grunt tasks you like.)
+ */
+@font-face {
+  font-family: "lato";
+  src: url('/fonts/lato.eot') format('embedded-opentype'), url('/fonts/lato.ttf') format('truetype'), url('/fonts/lato.svg') format('svg');
+}
+@font-face {
+  font-family: "lato-regular";
+  src: url('/fonts/lato-regular.eot') format('embedded-opentype'), url('/fonts/lato-regular.ttf') format('truetype'), url('/fonts/lato-regular.svg') format('svg');
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'lato-regular';
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #005f63;
+}
+a:hover {
+  opacity: .7;
+}
+a:visited {
+  color: #005f63;
+}
+.homepage {
+  line-height: 1.5;
+  padding-left: 130px;
+  height: 100%;
+  color: #005f63;
+  text-align: center;
+  margin: auto;
+  background-color: #e4f4f3;
+}
+.homepage h1 {
+  font-size: 40px;
+  padding: 10px;
+  font-family: 'lato';
+  display: inline-block;
+}
+.homepage h3 {
+  color: #01a093;
+  font-size: 1.7rem;
+  letter-spacing: .15rem;
+  padding-bottom: 40px;
+  font-family: 'lato';
+}
+.homepage h4 {
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+  font-family: 'lato';
+}
+.navigation-bar {
+  height: 100%;
+  width: 130px;
+  background-color: #25a7ac;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.nav-links a {
+  margin-top: 20px;
+  display: block;
+  text-align: left;
+  padding-left: 27px;
+}
+.logo-container {
+  margin: auto;
+}
+.logo {
+  max-height: 75px;
+  padding: 25px 0;
+}
+.heading {
+  padding: 40px 0 25px 0;
+  width: 100%;
+  background-color: #e4f4f3;
+  z-index: 2;
+}
+.heading a:hover {
+  color: #005f63;
+}
+.section-marker {
+  max-width: 750px;
+  width: 80%;
+  margin: 50px auto;
+  height: 2px;
+  border-radius: 8px;
+  border-bottom: 2px solid #14cfd8;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 75px;
+}
+.projects img {
+  width: 825px;
+  max-width: 90%;
+  border: 2px solid #005f63;
+  border-radius: 30px;
+  margin: 10px;
+}
+.projects h4 {
+  color: #01a093;
+}
+.projects .text-link {
+  width: 100px;
+  margin: auto;
+  margin-bottom: 35px;
+  color: #15b7bf;
+  background-color: #005f63;
+  border-radius: 9px;
+}
+.colors {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+}
+.icon {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  margin: auto;
+}
+.about {
+  width: 825px;
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 75px;
+}
+.about .third {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+.about img {
+  height: 150px;
+  float: right;
+}
+.about p {
+  text-align: left;
+  padding: 0 175px 25px 0;
+}
+.skills-familiar {
+  margin: auto;
+  clear: both;
+  text-align: left;
+}
+.skills-familiar .heading {
+  padding: 10px;
+  padding: 10px 0 10px 30px;
+  font-family: 'lato';
+}
+.contact {
+  padding-bottom: 75px;
+  max-width: 90%;
+  margin: auto;
+}
+a.social-icon img {
+  width: 40px;
+  padding: 10px;
+}
+footer p {
+  font-size: .8rem;
+}
+footer img {
+  width: 15px;
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 800px) {
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+  .heading h3 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .about .third {
+    width: 48%;
+  }
+  .about img {
+    float: none;
+  }
+  .about p {
+    padding: 0;
+  }
+  .skills-familiar {
+    padding-left: 10%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .heading h3 {
+    font-size: 1rem;
+  }
+  .skills-familiar {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
