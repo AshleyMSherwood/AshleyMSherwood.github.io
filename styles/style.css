@@ -131,7 +131,8 @@ a:visited {
   margin-bottom: 35px;
   color: #15b7bf;
   background-color: #005f63;
-  border-radius: 9px;
+  border-radius: 12px;
+  padding: 3px;
 }
 .colors {
   height: 50px;
