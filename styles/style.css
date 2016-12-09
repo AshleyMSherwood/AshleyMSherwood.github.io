@@ -33,6 +33,9 @@ h6 {
   padding: 0;
   font-family: 'lato-regular';
 }
+html, body {
+  height: 100%;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -44,29 +47,32 @@ a:hover {
 a:visited {
   color: #005f63;
 }
+.fa {
+    vertical-align: middle;
+}
+
 .homepage {
   line-height: 1.5;
   padding-left: 130px;
-  height: 100%;
   color: #005f63;
   text-align: center;
   margin: auto;
   background-color: #e4f4f3;
 }
-.homepage h1 {
+.heading h1 {
   font-size: 40px;
-  padding: 10px;
+  padding: 10px 0;
   font-family: 'lato';
   display: inline-block;
 }
-.homepage h3 {
+.heading h3 {
   color: #01a093;
   font-size: 1.7rem;
   letter-spacing: .15rem;
   padding-bottom: 10px;
   font-family: 'lato';
 }
-.homepage h4 {
+.heading h4 {
   font-size: 1.4rem;
   padding-bottom: 15px;
   font-family: 'lato';
@@ -92,12 +98,12 @@ a:visited {
 .logo {
   max-height: 75px;
   padding: 25px 0;
+  display: block;
+  margin: auto;
 }
 .heading {
   padding: 40px 0 25px 0;
   width: 100%;
-  background-color: #e4f4f3;
-  z-index: 2;
 }
 .heading a:hover {
   color: #005f63;
@@ -110,6 +116,8 @@ a:visited {
   border-radius: 8px;
   border-bottom: 2px solid #14cfd8;
 }
+
+/*HOMEPAGE*/
 .projects {
   display: flex;
   flex-direction: column;
@@ -149,20 +157,25 @@ a:visited {
   width: 825px;
   max-width: 90%;
   margin: auto;
-  padding-bottom: 75px;
 }
-.about .third {
+/*.about .third {
   width: 33%;
   display: inline-block;
   vertical-align: top;
-}
+}*/
 .about img {
   height: 150px;
   float: right;
 }
 .about p {
   text-align: left;
-  padding: 0 175px 25px 0;
+  padding: 30px 175px 0 0
+}
+.about a {
+  clear: both;
+  display: block;
+  font-weight: 600;
+  padding-top: 20px;
 }
 .skills-familiar {
   margin: auto;
@@ -189,6 +202,53 @@ footer p {
 footer img {
   width: 15px;
 }
+
+/*Resume Page Styles*/
+.resume-page {
+  line-height: 1.5;
+  padding-left: 130px;
+  color: #005f63;
+  text-align: left;
+  margin: auto;
+  background-color: #e4f4f3;
+}
+.resume-page .heading {
+  text-align: center;
+}
+.resume-page ul {
+  list-style-type: circle;
+}
+.resume-contact-links {
+  padding-top: 20px;
+}
+.resume-contact-links a {
+  padding: 0 8px;
+}
+.skills, .experience, .education, .references {
+  border: 5px solid #04c9d1;
+  border-bottom: 20px solid #04c9d1;
+  width: 97%;
+  max-width: 1160px;
+  margin: 0 auto 15px;
+}
+.skills h1, .experience h1, .education h1, .references h1 {
+  background-color: #04c9d1;
+  color: #eefbfa;
+}
+/*skills section*/
+.skills h3 {
+  padding-left: 10px;
+}
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.skills ul {
+  margin-top: 0
+}
+
+
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 800px) {
   .heading h1 {
@@ -198,9 +258,9 @@ footer img {
     font-size: 1.2rem;
     padding: 0;
   }
-  .about .third {
+  /*.about .third {
     width: 48%;
-  }
+  }*/
   .about img {
     float: none;
   }
