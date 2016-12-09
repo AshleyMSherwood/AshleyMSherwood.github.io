@@ -218,11 +218,19 @@ footer img {
 .resume-page ul {
   list-style-type: circle;
 }
+.resume-page .section-marker {
+  margin: 50px auto 0;
+}
 .resume-contact-links {
   padding-top: 20px;
 }
 .resume-contact-links a {
   padding: 0 8px;
+}
+.pdf-link {
+  font-family: 'lato';
+  padding-top: 25px;
+  display: block;
 }
 .skills, .experience, .education, .references {
   border: 5px solid #04c9d1;
