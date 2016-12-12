@@ -123,15 +123,15 @@ a:visited {
   flex-direction: column;
   padding-bottom: 75px;
 }
+.projects h4, .about h4, .contact h4 {
+  font-size: 1.2rem;
+}
 .projects img {
   width: 825px;
   max-width: 90%;
   border: 2px solid #005f63;
   border-radius: 30px;
   margin: 10px;
-}
-.projects h4 {
-  color: #01a093;
 }
 .projects .text-link {
   width: 100px;
@@ -227,6 +227,7 @@ footer img {
 }
 .resume-contact-links a {
   padding: 0 8px;
+  display: inline-block
 }
 .pdf-link {
   padding-top: 25px;
@@ -236,16 +237,17 @@ footer img {
   border: 5px solid #04c9d1;
   border-bottom: 20px solid #04c9d1;
   width: 97%;
-  max-width: 1160px;
+  max-width: 1000px;
   margin: 0 auto 15px;
 }
 .skills h1, .experience h1, .education h1, .references h1 {
   background-color: #04c9d1;
   color: #eefbfa;
+  padding: 5px 0 5px 10px;
 }
 /*skills section*/
 .skills h3 {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .skills-list {
   display: flex;
@@ -255,7 +257,16 @@ footer img {
 .skills ul {
   margin-top: 0
 }
-
+/*references section*/
+.references i {
+  padding-right: 8px;
+}
+.hide_on_desktop {
+  display: none;
+}
+.hide_on_400 {
+  display: block;
+}
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 800px) {
@@ -271,6 +282,7 @@ footer img {
   }*/
   .about img {
     float: none;
+    padding-top: 30px;
   }
   .about p {
     padding: 0;
@@ -282,6 +294,9 @@ footer img {
     width: 90%;
     display: block
   }
+  .skills, .experience, .education, .references {
+    max-width: 90%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .heading h3 {
@@ -290,7 +305,71 @@ footer img {
   .resume-contact-links a {
     display: block;
   }
-}
-@media only screen and (max-width: 380px) {
-  /*need to make navigation move to top*/
+  .hide_on_desktop {
+    display: block;
+  }
+  .hide_on_480 {
+    display: none;
+  }
+  .skills, .experience, .education, .references {
+    line-height: 1.8rem;
+  }
+  .homepage, .resume-page {
+    padding-left: 0;
+  }
+  .heading {
+    padding: 100px 0 25px 0;
+  }
+/*hamburger menu*/
+  .mobile_nav {
+    height: 60px;
+    background-color: #25a7ac;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  .logo {
+    max-height: 55px;
+    padding: 0 0 0 20px;
+    display: inline-block;
+  }
+  .ham_menu {
+    float: right;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .ham_menu div {
+    position: absolute;
+    left: 100%;
+  }
+  .ham_menu span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 4px 20px 0 0;
+    border-radius: 1px;
+    background: #fff;
+    z-index: 4;
+  }
+  .responsive-menu{
+    display: none;
+    clear:both;
+  }
+  ul.mobile-ham-nav-list {
+      list-style: none;
+      padding: 6px 0 0 15px;
+      text-align: left;
+    }
+  .expand {
+    display: block !important;
+    height: 180px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    width: 160px;
+    float: right;
+    border-radius: 8px;
+    background-color: #25a7ac;
+  }
+/*end hamburger menu*/
 }

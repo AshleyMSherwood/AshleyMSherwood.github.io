@@ -17,7 +17,7 @@
   <body>
     <div class="homepage">
   <!-- navigation -->
-      <section class="navigation-bar">
+      <section class="navigation-bar  hide_on_480">
         <div class="logo-container">
           <a href="/"><img class="logo" src="images/fox-white.png" alt="Fox logo and home link"></a>
         </div>
@@ -28,6 +28,27 @@
           <a href="/resume.html">RESUME</a>
         </div>
       </section>
+    <!-- mobile navigation -->
+      <section class="mobile-nav">
+        <div class="mobile_nav  hide_on_desktop" id="mobileNavigation">
+          <a href="/"><img class="logo" src="images/fox-white.png" alt="Fox logo and home link"></a>
+          <div class="ham_menu" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="responsive-menu" id="div3">
+            <ul class="mobile-ham-nav-list">
+              <li class="contact-link"><a href="/">HOME</a></li>
+              <li class="contact-link"><a href="#projects">PROJECTS</a></li>
+              <li class="contact-link"><a href="#about">ABOUT</a></li>
+              <li class="contact-link"><a href="#contact">CONTACT</a></li>
+              <li class="contact-link"><a href="/resume.html">RESUME</a></li>
+            </ul>
+          </div>
+        </div> 
+      </section>
+
   <!-- heading section -->
       <section class="heading">
         <a href="/"><h1>ASHLEY MARIE SHERWOOD</h1></a>
@@ -77,6 +98,8 @@
     </div> <!-- end homepage -->
 
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/navigation.js"></script>
 
   </body>
 </html>

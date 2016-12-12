@@ -16,17 +16,38 @@
   <body>
     <div class="resume-page">
   <!-- navigation -->
-      <section class="navigation-bar">
+      <section class="navigation-bar  hide_on_480">
         <div class="logo-container">
           <a href="/"><img class="logo" src="images/fox-white.png" alt="Fox logo and home link"></a>
         </div>
         <div class="nav-links">
-          <a href="#projects">PROJECTS</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
+          <a href="/#projects">PROJECTS</a>
+          <a href="/#about">ABOUT</a>
+          <a href="/#contact">CONTACT</a>
           <a href="/resume.html">RESUME</a>
         </div>
       </section>
+  <!-- mobile navigation -->
+      <section class="mobile-nav">
+        <div class="mobile_nav  hide_on_desktop" id="mobileNavigation">
+          <a href="/"><img class="logo" src="images/fox-white.png" alt="Fox logo and home link"></a>
+          <div class="ham_menu" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="responsive-menu" id="div3">
+            <ul class="mobile-ham-nav-list">
+              <li class="contact-link"><a href="/">HOME</a></li>
+              <li class="contact-link"><a href="/#projects">PROJECTS</a></li>
+              <li class="contact-link"><a href="/#about">ABOUT</a></li>
+              <li class="contact-link"><a href="/#contact">CONTACT</a></li>
+              <li class="contact-link"><a href="/resume.html">RESUME</a></li>
+            </ul>
+          </div>
+        </div> 
+      </section>
+
   <!-- heading section -->
       <div class="heading">
         <h1>ASHLEY MARIE SHERWOOD</h1>
@@ -74,18 +95,26 @@
       <div class="education">
         <h1>EDUCATION:</h1>
         <ul>
-          <li>Web Development Course - Skillcrush</li>
-          <li>Bachelor of Arts - Texas State University, San Marcos</li>
+          <li>Skillcrush - Web Development Course</li>
+          <li>Texas State University, San Marcos - Bachelor of Arts</li>
         </ul>
       </div>
       <div class="references">
         <h1>REFERENCES:</h1>
         <ul>
-          <li>Heather White, Owner and Designer - SeaLab Creative - 512-809-8136</li>
-          <li>Nicholas Crumrine, Owner and Lead Developer - 2Fat Interactive - 512-944-4222</li>
-          <li>Chuck Goss, Director of Development - Avention, Inc. - 512-964-6106</li>
+          <li><strong>Heather White</strong>, Owner and Designer - SeaLab Creative
+          <br><a href="tel:+1-512-809-8136"><i class="fa fa-mobile fa-2x"></i> 512-809-8136</a></li>
+          <li><strong>Nicholas Crumrine</strong>, Owner and Lead Developer - 2Fat Interactive
+          <br><a href="tel:+1-512-944-4222"><i class="fa fa-mobile fa-2x"></i> 512-944-4222</a></li>
+          <li><strong>Chuck Goss</strong>, Director of Development - Avention, Inc.
+          <br><a href="tel:+1-512-964-6106"><i class="fa fa-mobile fa-2x"></i> 512-964-6106</a></li>
         </ul>
       </div>
     </div>
+
+<!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/navigation.js"></script>
+
   </body>
 </html>
