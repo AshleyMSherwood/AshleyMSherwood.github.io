@@ -50,8 +50,31 @@ a:visited {
 .fa {
     vertical-align: middle;
 }
-
-.homepage {
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: .9rem;
+}
+h6 {
+  font-size: .8rem;
+}
+.homepage, .project-page {
   line-height: 1.5;
   padding-left: 130px;
   color: #005f63;
@@ -59,22 +82,19 @@ a:visited {
   margin: auto;
   background-color: #e4f4f3;
 }
+.container {
+  max-width: 95%;
+  margin: auto;
+}
 .heading h1 {
-  font-size: 40px;
   padding: 10px 0;
   font-family: 'lato';
   display: inline-block;
 }
 .heading h3 {
   color: #01a093;
-  font-size: 1.7rem;
   letter-spacing: .15rem;
   padding-bottom: 10px;
-  font-family: 'lato';
-}
-.heading h4 {
-  font-size: 1.4rem;
-  padding-bottom: 15px;
   font-family: 'lato';
 }
 .navigation-bar {
@@ -102,7 +122,7 @@ a:visited {
   margin: auto;
 }
 .heading {
-  padding: 40px 0 25px 0;
+  padding-top: 40px;
   width: 100%;
 }
 .heading a:hover {
@@ -122,11 +142,9 @@ a:visited {
   display: flex;
   flex-direction: column;
   padding-bottom: 75px;
+  text-align: left;
 }
-.projects h4, .about h4, .contact h4 {
-  font-size: 1.2rem;
-}
-.projects img {
+.projects-preview {
   width: 825px;
   max-width: 90%;
   border: 2px solid #005f63;
@@ -136,11 +154,17 @@ a:visited {
 .projects .text-link {
   width: 100px;
   margin: auto;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   color: #15b7bf;
   background-color: #005f63;
   border-radius: 12px;
   padding: 3px;
+}
+.projects img {
+  margin: 10px 0;
+}
+.projects a {
+  text-align: center;
 }
 .colors {
   height: 50px;
@@ -164,7 +188,7 @@ a:visited {
   vertical-align: top;
 }*/
 .about img {
-  height: 150px;
+  height: 175px;
   float: right;
 }
 .about p {
@@ -195,6 +219,9 @@ a:visited {
 a.social-icon img {
   width: 40px;
   padding: 10px;
+}
+footer {
+  padding-bottom: 15px;
 }
 footer p {
   font-size: .8rem;
@@ -241,7 +268,7 @@ footer img {
   max-width: 1000px;
   margin: 0 auto 15px;
 }
-.skills h1, .experience h1, .education h1, .references h1 {
+.resume-header {
   background-color: #04c9d1;
   color: #eefbfa;
   padding: 5px 0 5px 10px;
@@ -269,12 +296,18 @@ footer img {
   display: block;
 }
 
+/*PROJECT PAGE STYLES*/
+.project-header {
+  padding: 50px 0;
+  text-align: center;
+}
+
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 800px) {
-  .heading h1 {
+  h1 {
     font-size: 1.8rem;
   }
-  .heading h3 {
+  h3 {
     font-size: 1.2rem;
     padding: 0;
   }
@@ -300,7 +333,7 @@ footer img {
   }
 }
 @media only screen and (max-width: 480px) {
-  .heading h3 {
+  h3 {
     font-size: 1rem;
   }
   .resume-contact-links a {
@@ -315,11 +348,11 @@ footer img {
   .skills, .experience, .education, .references {
     line-height: 1.8rem;
   }
-  .homepage, .resume-page {
+  .homepage, .resume-page, .project-page {
     padding-left: 0;
   }
   .heading {
-    padding: 100px 0 25px 0;
+    padding-top: 100px ;
   }
 /*hamburger menu*/
   .mobile_nav {
