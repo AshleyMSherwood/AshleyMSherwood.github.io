@@ -54,26 +54,18 @@ img {
   max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 400;
 }
 h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-size: 2rem;
-}
-h3 {
   font-size: 1.7rem;
 }
-h4 {
-  font-size: 1.2rem;
+h3 {
+  font-size: 1.5rem;
 }
-h5 {
-  font-size: .9rem;
-}
-h6 {
-  font-size: .8rem;
-}
+
 .homepage, .project-page {
   line-height: 1.5;
   padding-left: 130px;
@@ -146,9 +138,9 @@ h6 {
 }
 .projects-preview {
   width: 825px;
-  max-width: 90%;
-  border: 2px solid #005f63;
-  border-radius: 30px;
+  max-width: 60%;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 9px;
   margin: 10px;
 }
 .projects .text-link {
@@ -165,6 +157,10 @@ h6 {
 }
 .projects a {
   text-align: center;
+}
+.project-heading {
+  margin-left: 18%;
+  padding-bottom: 25px;
 }
 .colors {
   height: 50px;
@@ -296,11 +292,6 @@ footer img {
   display: block;
 }
 
-/*PROJECT PAGE STYLES*/
-.project-header {
-  padding: 50px 0;
-  text-align: center;
-}
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 800px) {
@@ -318,7 +309,7 @@ footer img {
     float: none;
     padding-top: 30px;
   }
-  .about p {
+  .about-me {
     padding: 0;
   }
   .skills-familiar {
