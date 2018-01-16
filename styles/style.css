@@ -45,7 +45,7 @@ a:hover {
   opacity: .7;
 }
 a:visited {
-  color: #005f63;
+  color: #5d0063;
 }
 .fa {
     vertical-align: middle;
@@ -260,12 +260,14 @@ footer img {
   display: inline-block
 }
 .pdf-link {
-  padding-top: 25px;
+  padding: 25px;
   display: block;
+  color: #45528f;
 }
 .skills, .experience, .education, .references {
   border: 5px solid #04c9d1;
   border-bottom: 20px solid #04c9d1;
+  border-radius: 5px;
   width: 97%;
   max-width: 1000px;
   margin: 0 auto 15px;
