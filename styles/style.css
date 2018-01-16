@@ -162,11 +162,11 @@ h3 {
   text-align: center;
 }
 .project-description {
-  margin-left: 18%;
+  margin-left: 5%;
 }
 .project-heading {
-  margin-left: 18%;
-  padding: 15px 0;
+  margin-left: 2%;
+  padding: 25px 0 15px;
 }
 .colors {
   height: 50px;
@@ -302,6 +302,11 @@ footer img {
 
 
 /*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+  .about p {
+    padding: 0;
+  }
+}
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 1.8rem;
