@@ -314,6 +314,7 @@ footer img {
   h3 {
     font-size: 1.2rem;
     padding: 0;
+    font-weight: 600;
   }
   /*.about .third {
     width: 48%;
@@ -337,9 +338,6 @@ footer img {
   }
 }
 @media only screen and (max-width: 480px) {
-  h3 {
-    font-size: 1rem;
-  }
   .resume-contact-links a {
     display: block;
   }
