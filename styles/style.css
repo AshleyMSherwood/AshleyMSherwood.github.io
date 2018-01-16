@@ -158,6 +158,9 @@ h3 {
 .projects a {
   text-align: center;
 }
+.project-description {
+  margin-left: 18%;
+}
 .project-heading {
   margin-left: 18%;
   padding-bottom: 25px;
