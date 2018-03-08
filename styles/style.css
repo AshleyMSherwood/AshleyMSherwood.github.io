@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5rem;
 }
-h2 {
+h2, .h2 {
+  font-weight: 400;
   font-size: 1.5rem;
 }
 
@@ -72,7 +73,8 @@ h2 {
   background-color: #e4f4f3;
 }
 .container {
-  max-width: 95%;
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
 }
 .heading h1 {
@@ -95,11 +97,13 @@ h2 {
   left: 0;
   z-index: 3;
 }
+.nav-links {
+  padding-left: 27px;
+}
 .nav-links a {
   margin-top: 20px;
   display: block;
   text-align: left;
-  padding-left: 27px;
 }
 .logo-container {
   margin: auto;
@@ -159,10 +163,10 @@ h2 {
   text-align: center;
 }
 .project-description {
-  margin-left: 5%;
+  margin-left: 70px;
 }
 .project-heading {
-  margin-left: 2%;
+  margin-left: 70px;
   padding: 25px 0 15px;
 }
 .colors {
@@ -188,17 +192,20 @@ h2 {
 }*/
 .about img {
   height: 175px;
-  float: right;
 }
 .about p {
   text-align: left;
-  padding: 30px 175px 0 0
+  padding: 0 15px
 }
 .about a {
-  clear: both;
-  display: block;
+  display: inline-block;
   font-weight: 600;
   padding-top: 20px;
+}
+.about-text-and-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .skills-familiar {
   margin: auto;
@@ -317,7 +324,6 @@ footer img {
     width: 48%;
   }*/
   .about img {
-    float: none;
     padding-top: 30px;
   }
   .about-me {
