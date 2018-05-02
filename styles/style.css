@@ -354,7 +354,12 @@ footer img {
     display: block;
   }
   .hide_on_480 {
-    display: none;
+    width: 100%;
+    transform: rotateX;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    top: 97px;
   }
   .skills, .experience, .education, .references {
     line-height: 1.8rem;
@@ -363,7 +368,7 @@ footer img {
     padding-left: 0;
   }
   .heading {
-    padding-top: 100px ;
+    padding-top: 130px ;
   }
 /*hamburger menu*/
   .mobile_nav {
