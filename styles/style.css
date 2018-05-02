@@ -25,9 +25,9 @@
 
 @font-face {
     font-family: 'WesleyPosterJF';
-    src: url('WesleyPosterJF.woff2') format('woff2'),
+    src: url('WesleyPosterJF.ttf') format('truetype'), 
+        url('WesleyPosterJF.woff2') format('woff2'),
         url('WesleyPosterJF.woff') format('woff'),
-        url('WesleyPosterJF.ttf') format('truetype'),
         url('WesleyPosterJF.svg#WesleyPosterJF') format('svg');
     font-weight: 300;
     font-style: normal;
