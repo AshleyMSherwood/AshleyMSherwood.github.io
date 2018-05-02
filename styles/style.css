@@ -15,30 +15,30 @@
  */
 @font-face {
     font-family: 'Inconsolata';
-    src: url('Inconsolata-Regular.woff2') format('woff2'),
-        url('Inconsolata-Regular.woff') format('woff'),
-        url('Inconsolata-Regular.ttf') format('truetype'),
-        url('Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
+    src: url('../fonts/Inconsolata-Regular.ttf') format('truetype'),
+        url('../fonts/Inconsolata-Regular.woff2') format('woff2'),
+        url('../fonts/Inconsolata-Regular.woff') format('woff'),
+        url('../fonts/Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'WesleyPosterJF';
-    src: url('WesleyPosterJF.ttf') format('truetype'), 
-        url('WesleyPosterJF.woff2') format('woff2'),
-        url('WesleyPosterJF.woff') format('woff'),
-        url('WesleyPosterJF.svg#WesleyPosterJF') format('svg');
+    font-family: 'wesleyPoster';
+    src: url('../fonts/WesleyPosterJF.ttf') format('truetype'),
+        url('../fonts/WesleyPosterJF.woff2') format('woff2'),
+        url('../fonts/WesleyPosterJF.woff') format('woff'),
+        url('../fonts/WesleyPosterJF.svg#WesleyPosterJF') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inconsolata-Bold';
-    src: url('Inconsolata-Bold.woff2') format('woff2'),
-        url('Inconsolata-Bold.woff') format('woff'),
-        url('Inconsolata-Bold.ttf') format('truetype'),
-        url('Inconsolata-Bold.svg#Inconsolata-Bold') format('svg');
+    src: url('../fonts/Inconsolata-Bold.ttf') format('truetype'),
+        url('../fonts/Inconsolata-Bold.woff2') format('woff2'),
+        url('../fonts/Inconsolata-Bold.woff') format('woff'),
+        url('../fonts/Inconsolata-Bold.svg#Inconsolata-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
@@ -54,7 +54,7 @@ h6,
 .h2 {
   margin: 0;
   padding: 0;
-  font-family: 'WesleyPosterJF';
+  font-family: 'wesleyPoster';
 }
 html, body {
   height: 100%;
