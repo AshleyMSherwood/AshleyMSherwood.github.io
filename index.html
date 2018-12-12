@@ -3,13 +3,13 @@
   <head>
     <title>Ashley Sherwood - Front End Dev</title>
     <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ashley Sherwood is a front end web developer in Austin, Texas">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--STYLES-->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <!--STYLES END-->
@@ -17,7 +17,7 @@
   <body>
     <div class="homepage">
   <!-- navigation -->
-      <section class="navigation-bar  hide_on_480">
+      <nav class="navigation-bar  hide_on_480" aria-label="Main Navigation">
         <div class="logo-container">
           <a href="/"><img class="logo" src="images/fox-white.png" alt="Fox logo and home link"></a>
         </div>
@@ -25,11 +25,11 @@
           <a href="#projects">PROJECTS</a>
           <a href="#about">ABOUT</a>
           <a href="#contact">CONTACT</a>
-          <a href="/resume.html">RESUME</a>
+<!--           <a href="/resume.html">RESUME</a> -->
         </div>
-      </section>
+      </nav>
     <!-- mobile navigation -->
-      <section class="mobile-nav">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
         <div class="mobile_nav  hide_on_desktop" id="mobileNavigation">
           <a href="/"><img class="logo" src="images/fox-white.png" alt="Fox logo and home link"></a>
           <div class="ham_menu" id="menu-btn">
@@ -43,11 +43,11 @@
               <li class="contact-link"><a href="#projects">PROJECTS</a></li>
               <li class="contact-link"><a href="#about">ABOUT</a></li>
               <li class="contact-link"><a href="#contact">CONTACT</a></li>
-              <li class="contact-link"><a href="/resume.html">RESUME</a></li>
+       <!--        <li class="contact-link"><a href="/resume.html">RESUME</a></li> -->
             </ul>
           </div>
         </div> 
-      </section>
+      </nav>
       <div class="container">
   <!-- heading section -->
         <section class="heading">
@@ -56,52 +56,58 @@
           <div class="section-marker"></div>
         </section>
     <!-- projects section -->
-        <a id="projects"></a>
-          <section class="projects">
-          <h2 class="recent-projects-header">RECENT PROJECTS</h2>
-            <h3 class="project-heading"><a href="http://www.sealab.io" target="_blank">SeaLab.io</a></h3>
-              <p class="project-description">Implemented all designs, functionality, and assisted with UX/UI decisions.  Currently updating and maintaining on a regular basis.</p>
-              <a href="images/desktopHomepage.png" target="_blank"><img class="projects-preview" src="images/cropdesktopHomepage.png"></a>
+          <section class="projects" id="projects">
+            <h2 class="recent-projects-header">RECENT PROJECTS</h2>
+            <div class="project-wrapper">
+              <h3 class="project-heading"><a href="http://www.sealab.io" target="_blank">SeaLab.io</a></h3>
+              <p class="project-description">This is the SeaLab Creative Website.  I have been the only front-end developer on this project from it's inception in January 2015.  I implemented all designs, functionality, and assisted with much of the UX/UI planning and prototyping.  I am currently updating and maintaining this site on a regular basis.</p>
+              <div class="projects-description-close">X</div>
+              <img class="projects-preview" src="images/cropdesktopHomepage.png">
               <a class="text-link" href="http://www.sealab.io" target="_blank">SEE IT LIVE</a>
-            <h3 class="project-heading"><a href="https://www.riverlink.com/" target="_blank">RiverLink.com</a></h3>
+              <a class="text-link" href="images/desktopHomepage.png" target="_blank">VIEW MORE DETAIL</a>
+            </div>
+            <div class="project-wrapper">
+              <h3 class="project-heading"><a href="https://www.riverlink.com/" target="_blank">RiverLink.com</a></h3>
               <p class="project-description">Implemented first iteration designs from SeaLab Creative as seen below, then handed off to client to manage and update internally.</p>
-              <a href="images/riverLinkHomepage.png" target="_blank"><img class="projects-preview" src="images/cropriverLinkHomepage.png"></a>
+              <a href="images/riverLinkHomepage.png" target="_blank" class="projects-img-link"><img class="projects-preview" src="images/cropriverLinkHomepage.png"></a>
               <a class="text-link" href="https://riverlink.com/" target="_blank">SEE IT LIVE</a>
-            <h3 class="project-heading"><a href="http://www.customfittpt.net/" target="_blank">CustomFittPT.net</a></h3>
+            </div>
+            <div class="project-wrapper">
+              <h3 class="project-heading"><a href="http://www.customfittpt.net/" target="_blank">CustomFittPT.net</a></h3>
               <p class="project-description">Implemented many various design iterations from SeaLab Creative, most recently as seen here, and intermittently update when requested.</p>
-              <a href="images/customFittHomepage.png" target="_blank"><img class="projects-preview" src="images/cropcustomFittHomepage.png"></a>
+              <a href="images/customFittHomepage.png" target="_blank" class="projects-img-link"><img class="projects-preview" src="images/cropcustomFittHomepage.png"></a>
               <a class="text-link" href="http://www.customfittpt.net/" target="_blank">SEE IT LIVE</a>
-            <h3 class="project-heading">Drafthouse Tweets</h3>
+            </div>
+            <div class="project-wrapper">
+              <h3 class="project-heading">Drafthouse Tweets</h3>
               <p class="project-description">Created this small side project from the ground up for a meeting with the Alamo Drafthouse's web developer to showcase several tools their sites were using at the time.</p>
-              <a href="images/drafthouseTweets.png" target="_blank"><img class="projects-preview" src="images/cropdrafthouseTweets.png"></a>
+              <a href="images/drafthouseTweets.png" target="_blank" class="projects-img-link"><img class="projects-preview" src="images/cropdrafthouseTweets.png"></a>
+            </div>
           </section>
           <div class="section-marker"></div>
     <!-- about section -->
-      <a id="about"></a>
-        <section class="about">
+        <section class="about" id="about">
           <h2 class="section-header">ABOUT</h2>
           <div class="about-text-and-image">
             <img src="images/ashley-small.png" alt="Photo of Ashley M Sherwood, Front-end developer in Austin, TX">
-            <p class="about-me">Hi, I'm Ashley, a front-end developer based in Austin, TX.
+            <p class="about-me">Hi, I'm Ashley, a front-end developer based in the Austin, TX area.
             <br><br>
-            I have done freelance and long term contract work for over 3 years in the web-development field.  My experience has been working closely with designers as well as back-end engineers, as a solo developer, or on a very small team. I am interested in fun & innovative projects, and open to joining a larger team so I can learn from my peers. I'm eager to create new & exciting things!</p>
+            I have worked freelance and held long-term web development contracts for the past 4 years.  I have experience working on a fully remote team, and collaborating with designers, clients, project managers, and other engineers. I am interested in fun & innovative projects, value openess and honesty, and I'm looking to joining a larger team where I can learn and grow. I'm eager to create new & exciting things!</p>
           </div>
-          <a href="/resume.html">VIEW MY RESUME</a>
         </section>
     <!-- contact section -->
-    <a id="contact"></a>
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="section-marker"></div>
           <h2 class="section-header">CONTACT</h2>
           <p>Would you like to work together? Feel free to e-mail me at <strong><a href="mailto:ashleymariesherwood@gmail.com" alt="email address link" target="_blank">ashleymariesherwood at gmail.com</a></strong>.</p>
 
-          <a class="social-icon" href="https://www.linkedin.com/in/ashley-sherwood-90394876" target="_blank"><img src="images/in.png" alt="Linkedin link https://www.linkedin.com/in/ashley-sherwood-90394876"></a>
+          <a class="social-icon" href="https://www.linkedin.com/in/ashley-m-sherwood/" target="_blank"><img src="images/in.png" alt="Linkedin link https://www.linkedin.com/in/ashley-m-sherwood/"></a>
 
           <a class="social-icon" href="https://github.com/AshleyMSherwood" target="_blank"><img src="images/github.png" alt="GitHub link https://github.com/AshleyMSherwood"></a>
         </section>
     <!-- footer -->
         <footer>
-          <p><img src="images/heart.png" alt="image of heart"> This site was designed & built by hand from the ground up. </p>
+          <p><img src="images/heart.png" alt="image of heart"> This site was designed & built by me! </p>
         </footer>
       </div> <!-- end container -->
     </div> <!-- end homepage -->
@@ -109,6 +115,7 @@
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="javascripts/navigation.js"></script>
+    <script src="javascripts/projects-hover.js"></script>
 
   </body>
 </html>

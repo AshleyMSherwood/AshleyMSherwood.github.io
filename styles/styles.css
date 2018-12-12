@@ -1,25 +1,21 @@
-/**
- * importer.less
- *
- * By default, new Sails projects are configured to compile this file
- * from LESS to CSS.  Unlike CSS files, LESS files are not compiled and
- * included automatically unless they are imported below.
- *
- * The LESS files imported below are compiled and included in the order
- * they are listed.  Mixins, variables, etc. should be imported first
- * so that they can be accessed by subsequent LESS stylesheets.
- *
- * (Just like the rest of the asset pipeline bundled in Sails, you can
- * always omit, customize, or replace this behavior with SASS, SCSS,
- * or any other Grunt tasks you like.)
- */
+/*Styles.less*/
 @font-face {
-  font-family: "lato";
-  src: url('/fonts/lato.eot') format('embedded-opentype'), url('/fonts/lato.ttf') format('truetype'), url('/fonts/lato.svg') format('svg');
+  font-family: 'Inconsolata';
+  src: url('../fonts/Inconsolata-Regular.ttf') format('truetype'), url('../fonts/Inconsolata-Regular.woff2') format('woff2'), url('../fonts/Inconsolata-Regular.woff') format('woff'), url('../fonts/Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "lato-regular";
-  src: url('/fonts/lato-regular.eot') format('embedded-opentype'), url('/fonts/lato-regular.ttf') format('truetype'), url('/fonts/lato-regular.svg') format('svg');
+  font-family: 'wesleyPoster';
+  src: url('../fonts/WesleyPosterJF.ttf') format('truetype'), url('../fonts/WesleyPosterJF.woff2') format('woff2'), url('../fonts/WesleyPosterJF.woff') format('woff'), url('../fonts/WesleyPosterJF.svg#WesleyPosterJF') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Bold';
+  src: url('../fonts/Inconsolata-Bold.ttf') format('truetype'), url('../fonts/Inconsolata-Bold.woff2') format('woff2'), url('../fonts/Inconsolata-Bold.woff') format('woff'), url('../fonts/Inconsolata-Bold.svg#Inconsolata-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 html,
 body,
@@ -31,46 +27,42 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: 'lato-regular';
+  font-family: 'wesleyPoster';
 }
-html, body {
+html,
+body {
   height: 100%;
+  font-family: 'Inconsolata-Bold';
+  background-color: #272822;
 }
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #005f63;
+  color: #66d9ef;
 }
 a:hover {
-  opacity: .7;
-}
-a:visited {
-  color: #005f63;
+  opacity: 0.7;
 }
 .fa {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 img {
   max-width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
 h1 {
   font-size: 2.5rem;
 }
-h2, .h2 {
-  font-weight: 400;
+h2,
+.h2 {
   font-size: 1.5rem;
 }
-
-.homepage, .project-page {
+.homepage,
+.project-page {
   line-height: 1.5;
   padding-left: 130px;
-  color: #005f63;
+  color: #66d9ef;
   text-align: center;
   margin: auto;
-  background-color: #e4f4f3;
 }
 .container {
   width: 90%;
@@ -79,19 +71,17 @@ h2, .h2 {
 }
 .heading h1 {
   padding: 10px 0;
-  font-family: 'lato';
   display: inline-block;
 }
 .heading h3 {
   color: #01a093;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   padding-bottom: 10px;
-  font-family: 'lato';
 }
 .navigation-bar {
   height: 100%;
   width: 130px;
-  background-color: #25a7ac;
+  background: url("../images/website-color-sidebar.png") repeat-y;
   position: fixed;
   top: 0;
   left: 0;
@@ -129,20 +119,12 @@ h2, .h2 {
   border-radius: 8px;
   border-bottom: 2px solid #14cfd8;
 }
-
 /*HOMEPAGE*/
 .projects {
   display: flex;
   flex-direction: column;
   padding-bottom: 75px;
   text-align: left;
-}
-.projects-preview {
-  width: 825px;
-  max-width: 60%;
-  box-shadow: 3px 3px 3px grey;
-  border-radius: 9px;
-  margin: 10px;
 }
 .projects .text-link {
   width: 100px;
@@ -153,21 +135,51 @@ h2, .h2 {
   border-radius: 12px;
   padding: 3px;
 }
+.projects a {
+  text-align: center;
+}
 .projects img {
   margin: 10px 0;
 }
-.projects a {
-  text-align: center;
+.projects-preview {
+  width: 825px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 9px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.projects-preview:hover {
+  opacity: 0.1;
+}
+.projects-description-close {
+  position: relative;
+  z-index: 0;
+  width: 775px;
+  text-align: right;
+  transform: translate(0px, 50px);
+  cursor: pointer;
 }
 .recent-projects-header {
   text-align: center;
 }
 .project-description {
-  margin-left: 70px;
+  z-index: 0;
+  width: 775px;
+  position: relative;
+  transform: translate(0px, 300px);
+}
+.hover-show-description {
+  z-index: 2;
 }
 .project-heading {
-  margin-left: 70px;
   padding: 25px 0 15px;
+}
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .colors {
   height: 50px;
@@ -195,7 +207,7 @@ h2, .h2 {
 }
 .about p {
   text-align: left;
-  padding: 0 15px
+  width: 75%;
 }
 .about a {
   display: inline-block;
@@ -204,7 +216,7 @@ h2, .h2 {
 }
 .about-text-and-image {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .skills-familiar {
@@ -230,13 +242,12 @@ footer {
   padding-bottom: 15px;
 }
 footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-bottom: 0;
 }
 footer img {
   width: 15px;
 }
-
 /*Resume Page Styles*/
 .resume-page {
   line-height: 1.5;
@@ -261,14 +272,17 @@ footer img {
 }
 .resume-contact-links a {
   padding: 0 8px;
-  display: inline-block
+  display: inline-block;
 }
 .pdf-link {
   padding: 25px;
   display: block;
   color: #45528f;
 }
-.skills, .experience, .education, .references {
+.skills,
+.experience,
+.education,
+.references {
   border: 5px solid #04c9d1;
   border-bottom: 20px solid #04c9d1;
   border-radius: 5px;
@@ -291,7 +305,7 @@ footer img {
   width: 70%;
 }
 .skills ul {
-  margin-top: 0
+  margin-top: 0;
 }
 /*references section*/
 .references i {
@@ -303,8 +317,6 @@ footer img {
 .hide_on_400 {
   display: block;
 }
-
-
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1024px) {
   .about p {
@@ -334,9 +346,12 @@ footer img {
   }
   .skills-list {
     width: 90%;
-    display: block
+    display: block;
   }
-  .skills, .experience, .education, .references {
+  .skills,
+  .experience,
+  .education,
+  .references {
     max-width: 90%;
   }
 }
@@ -350,16 +365,21 @@ footer img {
   .hide_on_480 {
     display: none;
   }
-  .skills, .experience, .education, .references {
+  .skills,
+  .experience,
+  .education,
+  .references {
     line-height: 1.8rem;
   }
-  .homepage, .resume-page, .project-page {
+  .homepage,
+  .resume-page,
+  .project-page {
     padding-left: 0;
   }
   .heading {
     padding-top: 100px ;
   }
-/*hamburger menu*/
+  /*hamburger menu*/
   .mobile_nav {
     height: 60px;
     background-color: #25a7ac;
@@ -391,15 +411,15 @@ footer img {
     background: #fff;
     z-index: 4;
   }
-  .responsive-menu{
+  .responsive-menu {
     display: none;
-    clear:both;
+    clear: both;
   }
   ul.mobile-ham-nav-list {
-      list-style: none;
-      padding: 6px 0 0 15px;
-      text-align: left;
-    }
+    list-style: none;
+    padding: 6px 0 0 15px;
+    text-align: left;
+  }
   .expand {
     display: block !important;
     height: 180px;
@@ -410,5 +430,5 @@ footer img {
     border-radius: 8px;
     background-color: #25a7ac;
   }
-/*end hamburger menu*/
+  /*end hamburger menu*/
 }
