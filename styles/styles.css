@@ -157,10 +157,6 @@ hr {
   border-radius: 8px;
   border-bottom: 2px solid #fb8400;
 }
-.section-header {
-  text-transform: uppercase;
-  text-align: center;
-}
 /*HOMEPAGE*/
 .tagline {
   text-align: center;
@@ -444,6 +440,10 @@ footer img {
   }
   .tagline {
     width: 100%;
+  }
+  .section-header {
+    text-transform: uppercase;
+    text-align: center;
   }
   /*  .logo {
     max-height: 55px;
