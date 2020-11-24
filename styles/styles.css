@@ -81,6 +81,10 @@ h3,
 h3 a {
   color: #f62a6a;
 }
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
 hr {
   max-width: 725px;
   width: 70%;
@@ -92,6 +96,11 @@ hr {
   color: #66d9ef;
   text-align: center;
   margin: auto;
+}
+.homepage .section-header,
+.project-page .section-header {
+  text-transform: uppercase;
+  text-align: center;
 }
 .container {
   width: 74%;
@@ -171,6 +180,9 @@ hr {
   flex-direction: column;
   padding-bottom: 75px;
   text-align: left;
+}
+.projects h3 {
+  text-align: center;
 }
 .projects .button {
   width: 100px;
@@ -440,10 +452,6 @@ footer img {
   }
   .tagline {
     width: 100%;
-  }
-  .section-header {
-    text-transform: uppercase;
-    text-align: center;
   }
   /*  .logo {
     max-height: 55px;
